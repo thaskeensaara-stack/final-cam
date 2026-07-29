@@ -1,0 +1,6 @@
+{
+  "name": "MP Photo Guide",
+  "description": "India's Trusted Destination for Cameras, Lenses & Professional Imaging Equipment in Gandhi Nagar, Bangalore. Delivering Across India.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
