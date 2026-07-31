@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, MapPin, ShieldCheck, Sparkles, Award } from 'lucide-react';
+import heroCameraImg from '../assets/images/nikon_z9_flagship_1785501422943.jpg';
 
 interface HeroProps {
   onPageChange: (page: string) => void;
@@ -99,14 +100,9 @@ export const Hero: React.FC<HeroProps> = ({ onPageChange, onShopByBrandClick }) 
 
             <div className="relative z-10 w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white group">
               <img
-                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1200&q=80"
-                alt="Professional Mirrorless Camera and Cinema Equipment Setup"
+                src={heroCameraImg}
+                alt="Professional Mirrorless Camera Hardware"
                 loading="lazy"
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  target.onerror = null;
-                  target.src = 'https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=1200&q=80';
-                }}
                 className="w-full h-[380px] lg:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
