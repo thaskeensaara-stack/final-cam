@@ -29,6 +29,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
               <img
                 src="https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?auto=format&fit=crop&w=1000&q=80"
                 alt="MP Photo Guide Store & Equipment Showcase"
+                referrerPolicy="no-referrer"
                 className="w-full h-[380px] object-cover"
               />
             </div>
@@ -98,6 +99,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onPageChange }) => {
               <img
                 src="https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=1000&q=80"
                 alt="Precision Lenses and Camera Technology"
+                referrerPolicy="no-referrer"
                 className="w-full h-[380px] object-cover"
               />
             </div>

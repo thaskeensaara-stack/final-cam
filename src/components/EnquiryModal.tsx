@@ -52,12 +52,13 @@ export const EnquiryModal: React.FC<EnquiryModalProps> = ({ product, onClose }) 
               src={product.image}
               alt={product.name}
               loading="lazy"
+              referrerPolicy="no-referrer"
               onError={(e) => {
                 const target = e.target as HTMLImageElement;
                 target.onerror = null;
                 target.src = 'https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1000&q=80';
               }}
-              className="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg bg-white border border-slate-200 shrink-0"
+              className="w-16 h-16 sm:w-20 sm:h-20 object-contain p-1 rounded-lg bg-white border border-slate-200 shrink-0"
             />
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 mb-1">
